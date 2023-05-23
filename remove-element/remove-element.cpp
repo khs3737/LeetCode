@@ -1,7 +1,6 @@
 class Solution {
 public:
     int removeElement(vector<int> &nums, int val) {
-        queue<int> q;
         int n = nums.size();
         int answer = n;
         vector<int> v;
