@@ -2,12 +2,12 @@ class Solution {
 public:
     int search(vector<int>& nums, int target) {
         int n = nums.size();
+        // 이분탐색으로 최솟값 index 구하기
         int minIndex = 0;
         if(nums[0] > nums[n-1]){
             int l=0,r=n-1;
             while(l<=r){
                 int m = (l + r) / 2;
-                cout << m << " ";
                 if(m > 0 && nums[m]<nums[m-1]){
                     minIndex = m;
                     break;
@@ -18,7 +18,7 @@ public:
                 }
             }
         }
-        cout << "minIndex:" << minIndex<<'\n';
+        // 이분탐색으로 target 찾기
         int l, r;
         if(nums[0] <= nums[n-1]){
             l = 0;
