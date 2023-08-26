@@ -16,7 +16,6 @@ public:
                 } else{
                     r = m - 1;
                 }
-                minIndex = m;
             }
         }
         cout << "minIndex:" << minIndex<<'\n';
